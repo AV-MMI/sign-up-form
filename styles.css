@@ -65,19 +65,25 @@ main {
 
 #content-container {
 	width: 70vw;
+	max-height: 100vh;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
-	background-color: #fafafa;
+	background-color: #fafafa
 }
 
 #content {
 	text-align: center;
 }
 
-#top-container {
-	margin-left: 75%;
+#git-top-container {
+	display: flex;
+	justify-content: space-between;
 	margin-top: 1%;
+}
+
+#git-logo {
+	width: 100px;
 }
 
 #form-container {
@@ -86,7 +92,9 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	height: 50vh;
+	min-height: 50vh;
+	position: relative;
+	bottom: 20vh;
 }
 
 #general-error-container {
@@ -116,6 +124,7 @@ main {
 #form > fieldset > div {
 	display: flex;
 	margin-top: 4vh;
+	transition: 0.3s;
 }
 
 #form > fieldset > div > div {
@@ -127,20 +136,25 @@ main {
 	margin-right: 5vw;
 }
 
-#content-footer {
-	background-color: white;
-	border-top: 2px solid rgba(221, 209, 209, 1);
+#account-container {
 	display: flex;
-	justify-content: center;
+	flex-direction: column;
+	position: absolute;
+	top: 105%;
 }
 
-#git-logo {
-	width: 100px;
+#account-container > button {
+	padding: 10px;
+	margin-bottom: 5%;
 }
 
 input {
 	width: 15vw;
 	outline: none;
+}
+
+input:valid {
+	border: 2px solid #00FFAB;
 }
 
 input:hover {
@@ -153,9 +167,28 @@ input:focus {
 
 .error-input {
 	background-color: rgba(255, 70, 92, 0.41);
+	border: 2px solid red !important;
+}
+
+.error-container {
+	max-width: 15vw;
 }
 
 .error-span {
 	background-color: rgba(255, 70, 92, 0.21);
 	color: rgba(179, 0, 21, 1);
+}
+
+#submit-btn {
+	border: 1px solid black;
+	border-radius: 2px;
+}
+
+.valid-btn {
+	background-color: #00FFAB;
+	cursor: pointer;
+}
+
+#account-container > span > a {
+	color: #00FFAB;
 }
