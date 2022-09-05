@@ -1,0 +1,69 @@
+@font-face {
+	font-family: 'inconsolata';
+	src: url('fonts/inconsolata-variablefont_wdthwght-webfont.woff2') format('woff2'),
+		url('fonts/inconsolata-variablefont_wdthwght-webfont.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'rubik';
+	src: url('fonts/rubik-variablefont_wght-webfont.woff2') format('woff2'),
+		url('fonts/rubik-variablefont_wght-webfont.woff') format('woff');
+}
+
+body {
+	margin: 0;
+	padding: 0;
+}
+
+main {
+	display: flex;
+	width: 100%;
+}
+
+#img-container{
+	width: 30vw;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	color: white;
+}
+
+#bg-img {
+	height: 100%;
+}
+
+#logo-container{
+	background-color: rgba(82, 175, 0, 0.09);
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	height: 20vh;
+	width: 100%;
+	position: absolute;
+	top: 30vh;
+	font-size: 4rem;
+	font-family: 'inconsolata';
+}
+
+#company-logo {
+	height: 100%;
+	border-radius: 10%;
+}
+
+#img-footer {
+	position: absolute;
+	bottom: 0%;
+	background-color: rgba(255, 255, 255, 0.2);
+	width: 100%;
+	text-align: center;
+}
+
+#img-footer a {
+	color: white;
+}
+
+#content-container {
+	width: 70vw;
+	background-color: red;
+}

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>GAIA</title>
+	<link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+	<main>
+		<section id="img-container">
+			<img src="./img/bg-image.avif" alt="A path between trees" id="bg-img">
+			<div id="logo-container">
+				<img id="company-logo" src="./img/company-logo.png" alt="AV company">
+				<span> GAIA</span>
+			</div>
+
+			<div id="img-footer">
+				<span>Photo by <a href="https://unsplash.com/photos/c2QQAFGRFf4">Emma Birman</a> on <a href="https://unsplash.com">Unsplash</a></span>
+			</div>
+		</section>
+		<section id="content-container">
+			<p></p>
+			<div id="form-container">
+				<form action="http://httpbin.org/post" method="post" novalidate>
+					<fieldset>
+						<legend>Join us!</legend>
+						<div id="names-container">
+							<div id="first-name-container">
+								<label for="first-name">FIRST NAME <strong>*</strong></label>
+								<input type="text" id="first-name" placeholder="Jane" required>
+								<div class="error-container">
+									<span class="errorDisplay"></span>
+								</div>
+							</div>
+
+							<div id="last-name-container">
+								<label for="last-name">LAST NAME <strong>*</strong></label>
+								<input type="text" id="last-name" placeholder="Doe" required>
+								<div class="error-container">
+									<span class="errorDisplay"></span>
+								</div>
+							</div>
+						</div>
+
+						<div id="email-tel-container">
+							<div id="email-container">
+								<label for="email">EMAIL <strong>*</strong></label>
+								<input type="email" id="email" placeholder="jane@doe.com" required>
+								<div class="error-container">
+									<span class="errorDisplay"></span>
+								</div>
+							</div>
+
+							<div id="tel-container">
+								<label for="tel">PHONE NUMBER <strong>*</strong></label>
+								<input type="tel" id="tel" placeholder="1234567891 or 123-456-7891" required>
+								<div class="error-container">
+									<span class="errorDisplay"></span>
+								</div>
+							</div>
+						</div>
+
+						<div id="double-password-container">
+							<div id="password-container">
+								<label for="psswd">PASSWORD <strong>*</strong></label>
+								<input type="password" id="psswd" required>
+								<div id="error-container">
+									<span class="errorDisplay"></span>
+								</div>
+							</div>
+
+							<div id="password-confirm-container">
+								<label for="psswd-confirm">CONFIRM PASSWORD <strong>*</strong></label>
+								<input type="password" id="psswd-confirm" required>
+								<div id="error-container">
+									<span class="errorDisplay"></span>
+								</div>
+							</div>
+						</div>
+					</fieldset>
+					
+					<button type="submit">Create Account</button>
+					<span>Already have an account? <a href="#">Log in</a></span>
+				</form>
+			</div>
+			<div id="content-footer">
+				<a href="#">
+					<img id="git-logo"src="./img/GitHub_Logo.png" alt="Github logo">
+				</a>
+			</div>
+		</section>
+	</main>
+</body>
+</html>
