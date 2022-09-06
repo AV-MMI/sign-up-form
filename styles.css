@@ -74,6 +74,7 @@ main {
 
 #content {
 	text-align: center;
+	font-family: 'rubik';
 }
 
 #git-top-container {
@@ -92,25 +93,36 @@ main {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	min-height: 50vh;
+	min-height: 55vh;
 	position: relative;
 	bottom: 20vh;
+	font-family: 'rubik';
 }
 
 #general-error-container {
 	display: flex;
 	flex-direction: column;
+	max-height: 2vh;
 }
 
-#general-error {
+.general-error {
 	width: 70vw;
 	background-color: rgba(255, 70, 92, 0.41);
-	color: rgba(179, 0, 21, 1);
 	text-align: center;
 }
 
-#general-error:nth--child(n+1){
+.general-error:nth--child(n+1){
 	margin-top: 5px;
+}
+
+
+.input-span {
+	color: rgba(255, 0, 26, 1);
+	margin-right: 5px;
+}
+
+.message-span {
+	color: rgba(179, 0, 21, 1);
 }
 
 #form > fieldset {
@@ -177,6 +189,10 @@ input:focus {
 .error-span {
 	background-color: rgba(255, 70, 92, 0.21);
 	color: rgba(179, 0, 21, 1);
+}
+
+.error-input + div > .error-span::before {
+	content: '⚠️';
 }
 
 #submit-btn {
